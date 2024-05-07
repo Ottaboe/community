@@ -1,3 +1,4 @@
+l
 mode: sleep
 -
 settings():
@@ -34,3 +35,11 @@ settings():
     user.mouse_wake()
     user.history_enable()
     user.talon_mode()
+
+    
+
+# So you can wake Talon with Parrot 
+
+parrot(cluck):
+    user.engine_wake()
+    tracking.control_toggle()
