@@ -21,7 +21,9 @@ not speech.engine: dragon
 #
 # It's a useful and well known command, though, so if you're using any other speech
 # engine, this controls Talon.
-^(wake up)+$: speech.enable()
+^(wake up)+$: 
+    speech.enable()
+    tracking.control_toggle()
 
 # We define this *only* if the speech engine isn't Dragon, because if you're using Dragon,
 # "go to sleep" is used to specifically control Dragon, and not affect Talon.
@@ -31,7 +33,7 @@ not speech.engine: dragon
 ^go sleep [<phrase>]$: speech.disable()
 ^talon sleep [<phrase>]$: speech.disable()
 
-^drowsy [<phrase>]$:
+^drowse [<phrase>]$:
     user.switcher_hide_running()
     user.history_disable()
     user.homophones_hide()
