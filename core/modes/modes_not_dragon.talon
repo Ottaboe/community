@@ -32,7 +32,7 @@ not speech.engine: dragon
 ^go sleep [<phrase>]$: speech.disable()
 ^talon sleep [<phrase>]$: speech.disable()
 
-^drowse [<phrase>]$:
+^drowsy [<phrase>]$:
     user.switcher_hide_running()
     user.history_disable()
     user.homophones_hide()
