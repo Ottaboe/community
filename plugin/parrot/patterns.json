@@ -35,15 +35,15 @@
 	"pop": {
 		"sounds": ["pop"],
 		"threshold": {
-			">power": 20,
-			">probability": 0.92
+			">power": 5,
+			">probability": 0.98
 		},
 		"throttle": {
 			"pop": 0.15
 		}
 	},
 	"gluck": {
-		"sounds": ["stop_implosive_velar"],
+		"sounds": ["lar"],
 		"threshold": {
 			">power": 50,
 			">probability": 0.9
