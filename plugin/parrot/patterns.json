@@ -33,7 +33,7 @@
 		}
 	},
 	"pop": {
-		"sounds": ["sound_pop"],
+		"sounds": ["pop"],
 		"threshold": {
 			">power": 20,
 			">probability": 0.92

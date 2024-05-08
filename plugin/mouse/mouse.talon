@@ -134,3 +134,9 @@ curse no:
 # To scroll with a hiss sound, set mouse_enable_hiss_scroll to true in settings.talon
 mouse hiss up: user.hiss_scroll_up()
 mouse hiss down: user.hiss_scroll_down()
+
+
+
+
+
+
