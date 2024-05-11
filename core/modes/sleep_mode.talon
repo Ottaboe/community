@@ -42,4 +42,4 @@ settings():
 
 parrot(cluck):
     user.engine_wake()
-    tracking.control_toggle()
+    user.ensure_tracking_enabled()
