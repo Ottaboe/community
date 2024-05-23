@@ -11,7 +11,7 @@ class Actions:
 
     def engine_wake():
         """Wake the engine"""
-        speech_system.engine_mimic("wake up"),
+        speech_system.engine_mimic("wake up now Talon"),
 
     def engine_mimic(cmd: str):
         """Sends phrase to engine"""
