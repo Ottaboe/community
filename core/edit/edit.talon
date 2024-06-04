@@ -186,3 +186,5 @@ redo: edit.redo()
 # Save
 file save: edit.save()
 file save all: edit.save_all()
+
+[go] line mid: user.line_middle()
