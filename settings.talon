@@ -2,6 +2,9 @@ settings():
     # Adjust the scale of the imgui
     imgui.scale = 1.1
 
+    # Talon dark mode
+    imgui.dark_mode = true
+    
     # If `true`, automatically show the picker GUI when the file manager has focus
     user.file_manager_auto_show_pickers = false
 
