@@ -104,7 +104,7 @@ clear way down:
     edit.delete()
 
 # Copy
-copy that: edit.copy()
+copy: edit.copy()
 copy all: user.copy_all()
 copy line: user.copy_line()
 copy line start: user.copy_line_start()
@@ -152,7 +152,7 @@ cut word right: user.cut_word_right()
 #     edit.cut()
 
 # Paste
-(pace | paste) that: edit.paste()
+(pace | paste): edit.paste()
 (pace | paste) enter:
     edit.paste()
     key(enter)
@@ -179,8 +179,8 @@ new line below | slap: edit.line_insert_down()
     insert(" ")
 
 # Undo/redo
-undo that: edit.undo()
-redo that: edit.redo()
+undo: edit.undo()
+redo: edit.redo()
 
 # Save
 file save: edit.save()
