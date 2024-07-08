@@ -1,30 +1,30 @@
 {
 	"cluck": {
-		"sounds": ["clack click"],
+		"sounds": ["cluck"],
 		"threshold": {
-			">power": 20,
-			">probability": 0.995
+			">power": 100,
+			">probability": 0.99
 		},
 		"throttle": {
 			"cluck": 0.12,
-			"pop": 0.2
+			"pop": 0.1
 		}
 	},
 	"tut": {
 		"sounds": ["tut"],
 		"threshold": {
-			">power": 20,
-			">probability": 0.9
+			">power": 50,
+			">probability": 0.996
 		},
 		"throttle": {
-			"tut": 0.12
+			"tut": 0.1
 		}
 	},
 	"palate_click": {
-		"sounds": ["click_palatal"],
+		"sounds": ["palate click"],
 		"threshold": {
-			">power": 20,
-			">probability": 0.86
+			">power": 30,
+			">probability": 0.99
 		},
 		"throttle": {
 			"palate_click": 0.12,
@@ -35,45 +35,79 @@
 	"pop": {
 		"sounds": ["pop"],
 		"threshold": {
-			">power": 5,
+			">power": 25,
 			">probability": 0.98
 		},
 		"throttle": {
-			"pop": 0.15
+			"pop": 0.1
 		}
 	},
-	"gluck": {
-		"sounds": ["lar"],
+
+
+
+
+	"whistle_low": {
+		"sounds": ["whistle"],
 		"threshold": {
-			">power": 50,
-			">probability": 0.9
+			">probability": 0.93,
+			"<f0": 1300
 		},
 		"throttle": {
-			"gluck": 0.25
+			"whistle_high": 0.1
+		},
+		"graceperiod": 0.2,
+		"grace_threshold": {
+			">probability": 0.8
+		}
+	},
+	"whistle_high": {
+		"sounds": ["whistle"],
+		"threshold": {
+			">probability": 0.93,
+			">f0": 1300
+		},
+		"throttle": {
+			"whistle_low": 0.1
+		},
+		"graceperiod": 0.2,
+		"grace_threshold": {
+			">probability": 0.8
+		}
+	},
+
+
+	"kik": {
+		"sounds": ["kik"],
+		"threshold": {
+			">power": 50,
+			">probability": 0.99
+		},
+		"throttle": {
+			"kik": 0
 		}
 	},	
 	"finger_snap": {
 		"sounds": ["sound_finger_snap"],
 		"detect_after": 0.015,
 		"threshold": {
-			">power": 20,
+			">power": 100,
 			">probability": 0.96
 		}
 	},
-	"ch": {
-		"sounds": ["sibilant_ch"],
+	"tut_low": {
+		"sounds": ["tut_low"],
 		"threshold": {
-			">power": 20,
-			">probability": 0.9
+			">power": 50,
+			">probability": 0.99
 		},
 		"throttle": {
-			"ch": 0.2
+			"tut_low": 0.2
 		}	
 	},	
 	"ah": {
 		"sounds": ["vowel_ah", "vowel_aa"],
 		"threshold": {
-			">power": 20,
+			">power": 100,
 			">probability": 0.87
 		},
 		"throttle": {
@@ -84,7 +118,7 @@
 	"oh": {
 		"sounds": ["vowel_oh"],
 		"threshold": {
-			">power": 20,
+			">power": 100,
 			">probability": 0.9
 		},
 		"throttle": {
@@ -95,7 +129,7 @@
 	"ee": {
 		"sounds": ["vowel_iy"],
 		"threshold": {
-			">power": 20,
+			">power": 100,
 			">probability": 0.9
 		},
 		"throttle": {
@@ -105,7 +139,7 @@
 	"ue": {
 		"sounds": ["vowel_y"],
 		"threshold": {
-			">power": 20,
+			">power": 100,
 			">probability": 0.9
 		},
 		"throttle": {
@@ -115,7 +149,7 @@
 	"ae": {
 		"sounds": ["vowel_ae"],
 		"threshold": {
-			">power": 20,
+			">power": 100,
 			">probability": 0.9
 		}
 	},
@@ -123,7 +157,7 @@
 	"horse": {
 		"sounds": ["thrill_bilabial", "thrill_r"],
 		"threshold": {
-			">power": 20,
+			">power": 100,
 			">probability": 0.8
 		},
 		"detect_after": 0.02,
@@ -139,22 +173,11 @@
 			"ee": 0.1
 		}
 	},
-	"whistle": {
-		"sounds": ["sound_whistle"],
-		"threshold": {
-			">power": 20,
-			">probability": 0.85
-		},
-		"graceperiod": 0.1,
-		"grace_threshold": {
-			">power": 15,
-			">probability": 0.7
-		}
-	},
+	
 	"chopper": {
 		"sounds": ["thrill_thr"],
 		"threshold": {
-			">power": 20,
+			">power": 100,
 			">probability": 0.9
 		},
 		"graceperiod": 0.1,
@@ -168,7 +191,7 @@
 	"hurr": {
 		"sounds": ["approximant_r"],
 		"threshold": {
-			">power": 20,
+			">power": 100,
 			">probability": 0.9
 		},
 		"graceperiod": 0.1,
@@ -180,7 +203,7 @@
 	"hmm": {
 		"sounds": ["nasal_m", "nasal_ng"],
 		"threshold": {
-			">power": 20,
+			">power": 100,
 			">probability": 0.9
 		},
 		"graceperiod": 0.1,
@@ -192,7 +215,7 @@
 	"oo": {
 		"sounds": ["vowel_ow", "vowel_u"],
 		"threshold": {
-			">power": 20,
+			">power": 100,
 			">probability": 0.9
 		},
 		"graceperiod": 0.1,
@@ -207,7 +230,7 @@
 	"lll": {
 		"sounds": ["approximant_l"],
 		"threshold": {
-			">power": 20,
+			">power": 100,
 			">probability": 0.9
 		},
 		"graceperiod": 0.1,
@@ -222,7 +245,7 @@
 	"yee": {
 		"sounds": ["approximant_j"],
 		"threshold": {
-			">power": 20,
+			">power": 100,
 			">probability": 0.9
 		},
 		"graceperiod": 0.1,
@@ -234,7 +257,7 @@
 	"uh": {
 		"sounds": ["vowel_eu"],
 		"threshold": {
-			">power": 20,
+			">power": 100,
 			">probability": 0.95
 		},
 		"graceperiod": 0.1,
@@ -246,7 +269,7 @@
 	"fff": {
 		"sounds": ["fricative_f"],
 		"threshold": {
-			">power": 10,
+			">power": 100,
 			">probability": 0.87
 		},
 		"graceperiod": 0.1,
@@ -261,7 +284,7 @@
 	"buzz": {
 		"sounds": ["sibilant_z", "fricative_v"],
 		"threshold": {
-			">power": 20,
+			">power": 100,
 			">probability": 0.9
 		},
 		"graceperiod": 0.1,
@@ -273,7 +296,7 @@
 	"generator": {
 		"sounds": ["sibilant_zh"],
 		"threshold": {
-			">power": 20,
+			">power": 100,
 			">probability": 0.9
 		},
 		"graceperiod": 0.1,
@@ -285,7 +308,7 @@
 	"hiss": {
 		"sounds": ["sibilant_s"],
 		"threshold": {
-			">power": 13,
+			">power": 100,
 			">probability": 0.9
 		},
 		"graceperiod": 0.1,
@@ -297,7 +320,7 @@
 	"shush": {
 		"sounds": ["sibilant_sh"],
 		"threshold": {
-			">power": 10,
+			">power": 100,
 			">probability": 0.9
 		},
 		"graceperiod": 0.1,		
@@ -312,7 +335,7 @@
 	"x": {
 		"sounds": ["gutteral_kh"],
 		"threshold": {
-			">power": 20,
+			">power": 100,
 			">probability": 0.85
 		}
 	}
