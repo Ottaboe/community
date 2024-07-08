@@ -1,10 +1,3 @@
-from talon import Module
-mod = Module()
-mod.mode("dutch")
-
-
-
-
 from talon import Context, Module, actions, app
 
 from ..user_settings import get_list_from_csv
