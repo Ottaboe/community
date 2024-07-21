@@ -39,4 +39,3 @@ not speech.engine: dragon
     user.homophones_hide()
     user.mouse_sleep()
     speech.disable()
-    user.engine_sleep()
