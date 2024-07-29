@@ -1,3 +1,7 @@
+# Compound of action(select, clear, copy, cut, paste, etc.) and modifier(word, line, etc.) commands for editing text.
+# eg: "select line", "clear all"
+<user.edit_action> <user.edit_modifier>: user.edit_command(edit_action, edit_modifier)
+
 # Zoom
 zoom in: edit.zoom_in()
 zoom out: edit.zoom_out()
@@ -34,18 +38,12 @@ go page up: edit.page_up()
 go page down: edit.page_down()
 
 # Selecting
-select all: edit.select_all()
-select line: edit.select_line()
-select line start: user.select_line_start()
-select line end: user.select_line_end()
-select block: edit.select_paragraph()
 
 select left: edit.extend_left()
 select right: edit.extend_right()
 select up: edit.extend_line_up()
 select down: edit.extend_line_down()
 
-select word: edit.select_word()
 select word left: edit.extend_word_left()
 select word right: edit.extend_word_right()
 
@@ -128,12 +126,6 @@ copy word right: user.copy_word_right()
 
 # Cut
 cut that: edit.cut()
-cut all: user.cut_all()
-cut line: user.cut_line()
-cut line start: user.cut_line_start()
-cut line end: user.cut_line_end()
-cut block: user.cut_paragraph()
-cut word: user.cut_word()
 cut word left: user.cut_word_left()
 cut word right: user.cut_word_right()
 
@@ -158,12 +150,6 @@ paste now: edit.paste()
 #    edit.paste()
 #    key(enter)
 paste match: edit.paste_match_style()
-(pace | paste) [to] all: user.paste_all()
-(pace | paste) [to] line: user.paste_line()
-(pace | paste) [to] line start: user.paste_line_start()
-(pace | paste) [to] line end: user.paste_line_end()
-(pace | paste) [to] block: user.paste_paragraph()
-(pace | paste) [to] word: user.paste_word()
 
 # Duplication
 clone that: edit.selection_clone()
