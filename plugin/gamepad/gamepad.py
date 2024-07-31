@@ -8,6 +8,7 @@ slow_mouse_move = False
 mod = Module()
 mod.tag("gamepad", desc="Activate tag to enable gamepad bindings")
 
+
 ctx = Context()
 ctx.matches = "app:discord"
 @ctx.action_class("user")
@@ -15,6 +16,7 @@ class UserActions:
 
     def gamepad_press_dpad_right():
         print("dpad_right")
+
 
 @mod.action_class
 class Actions:
@@ -320,6 +322,7 @@ def gamepad_mouse_jump(direction: str):
     """Move the mouse cursor to the specified quadrant of the active screen"""
     x, y = ctrl.mouse_pos()
     rect = ui.screen_containing(x, y).rect
+    print(ui.active_window())
 
     # Half distance between cursor and screen edge
     match direction:
@@ -340,17 +343,4 @@ def get_screen(x: float, y: float) -> Screen:
     if not screen.contains(x, y):
         screen = ui.screen_containing(x, y)
     return screen
-
-
-
-
-
-
-
-
-
-
-
-
-
 
