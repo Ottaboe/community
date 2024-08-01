@@ -169,3 +169,8 @@ class Actions:
         actions.edit.left()
         for i in range(0, half_line_length):
             actions.edit.right()
+
+    def cut_line():
+        """Cut current line"""
+        actions.edit.select_line()
+        actions.edit.cut()
