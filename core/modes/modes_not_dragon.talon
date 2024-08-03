@@ -1,6 +1,6 @@
-mode: sleep
-mode: dictation
 mode: command
+mode: dictation
+mode: sleep
 not speech.engine: dragon
 -
 # The optional <phrase> afterwards allows these to match even if you say arbitrary text
