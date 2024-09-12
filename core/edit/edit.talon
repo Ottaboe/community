@@ -77,15 +77,15 @@ clear down:
     edit.extend_line_down()
     edit.delete()
 
-clear word: edit.delete_word()
+#clear word
 
-clear word left:
+remove:
+    user.delete_word_smart()
     edit.extend_word_left()
     edit.delete()
 
-clear word right:
-    edit.extend_word_right()
-    edit.delete()
+wipe:
+    user.wipe_word()
 
 clear way left:
     edit.extend_line_start()

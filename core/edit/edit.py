@@ -215,3 +215,39 @@ class Actions:
         """Delete to end of current line"""
         actions.user.select_line_end()
         actions.edit.delete()
+
+    def delete_word_smart():
+        """Delete the entire word or the word to the left, depending on cursor position"""
+        # Extend the selection to the left first
+        actions.edit.extend_word_left()
+
+        # Check if the entire word is selected
+        # Move the cursor to the right and try to delete the remaining part if needed
+        actions.key("ctrl-shift-right")
+
+        # Delete the entire word
+        actions.edit.delete()
+
+    def wipe_word():
+        """Delete the word to the right of the cursor, including any leading spaces"""
+        
+        # Step 1: Extend the selection to the right
+        actions.edit.extend_word_right()
+
+        # Step 2: Check if the selection is empty or only contains a space
+        if actions.user.selection_is_space_or_empty():
+            # If so, extend the selection to the right again to capture the next word
+            actions.edit.extend_word_right()
+
+        # Step 3: Delete the selected text
+        actions.edit.delete()
+
+    @mod.action_class
+    class Actions:
+        def selection_is_space_or_empty() -> bool:
+            """Returns True if the current selection is empty or only contains whitespace"""
+            # This is a stub; you'll need to implement this according to your environment.
+            # You could check the length of the selected text or inspect the selected text itself.
+            # Here we just return False as a placeholder.
+            return False
+
