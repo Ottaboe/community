@@ -1,4 +1,4 @@
-from talon import Module, Context, actions, cron
+from talon import Module, Context, actions, cron, ctrl
 import time
 
 HOLD_TIMEOUT = 0.2
@@ -96,9 +96,12 @@ class Actions:
 
     def foot_switch_right_down():
         """Foot switch button right:down"""
+        print("Right footswitch pressed - triggering left-click")
+        ctrl.mouse_click(button=0)  # Perform left-click
 
     def foot_switch_right_up(held: bool):
         """Foot switch button right:up"""
+        pass
 
 
 # ---------- Default implementation ----------
@@ -134,9 +137,4 @@ class UserActions:
         if not held:
             actions.user.go_back()
 
-    def foot_switch_right_down():
-        pass
-
-    def foot_switch_right_up(held: bool):
-        pass
 
