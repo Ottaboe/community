@@ -1,5 +1,7 @@
 list: user.letter
 -
+# for common alternative spoken forms for letters, visit
+# https://talon.wiki/quickstart/improving_recognition_accuracy/#collected-alternatives-to-the-default-alphabet
 air: a
 bat: b
 cap: c
@@ -8,17 +10,17 @@ each: e
 fine: f
 gust: g
 harp: h
-sit: i
+ice: i
 jury: j
-crunch: k
+kick: k
 look: l
 made: m
 near: n
-odd: o
-pit: p
-quench: q
+ox: o
+pink: p
+queen: q
 red: r
-sun: s
+sam: s
 trap: t
 urge: u
 vest: v
