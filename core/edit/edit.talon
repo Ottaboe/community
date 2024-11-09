@@ -47,11 +47,6 @@ select down: edit.extend_line_down()
 select word left: edit.extend_word_left()
 select word right: edit.extend_word_right()
 
-select way left: edit.extend_line_start()
-select way right: edit.extend_line_end()
-select way up: edit.extend_file_start()
-select way down: edit.extend_file_end()
-
 # Indentation
 indent [more]: edit.indent_more()
 (indent less | out dent): edit.indent_less()
@@ -82,22 +77,6 @@ remove:
 
 wipe:
     user.wipe_word()
-
-clear way left:
-    edit.extend_line_start()
-    edit.delete()
-
-clear way right:
-    edit.extend_line_end()
-    edit.delete()
-
-clear way up:
-    edit.extend_file_start()
-    edit.delete()
-
-clear way down:
-    edit.extend_file_end()
-    edit.delete()
 
 # Copy
 copy: edit.copy()
