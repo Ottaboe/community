@@ -1,13 +1,6 @@
-l
 mode: sleep
+not tag: user.deep_sleep
 -
-settings():
-    # Stop continuous scroll/gaze scroll with a pop
-    user.mouse_enable_pop_stops_scroll = false
-    # Stop pop click with 'control mouse' mode
-    user.mouse_enable_pop_click = 0
-    # Stop mouse scroll down using hiss noise
-    user.mouse_enable_hiss_scroll = false
 
 #================================================================================
 # Commands to wake Talon
@@ -36,14 +29,4 @@ settings():
     user.history_enable()
     user.talon_mode()
 
-    
-
-# So you can wake Talon with Parrot 
-
-parrot(cluck):
-    user.engine_wake()
-    user.ensure_tracking_enabled()
-    mode.disable("user.eye")
-    mode.disable("dictation")
-    mode.disable("sleep")
-    mode.enable("command")
+^talon wake [<phrase>]$: speech.enable()
