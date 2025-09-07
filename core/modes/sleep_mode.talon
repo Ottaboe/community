@@ -41,7 +41,7 @@ settings():
 # So you can wake Talon with Parrot 
 
 parrot(cluck):
-    user.engine_wake()
+    user.dragon_engine_wake()
     user.ensure_tracking_enabled()
     mode.disable("user.eye")
     mode.disable("dictation")

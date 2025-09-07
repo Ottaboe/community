@@ -1,0 +1,15 @@
+list: user.system_paths
+hostname: DESKTOP-09OE2MR
+-
+user: C:\Users\ottab
+profile: C:\Users\ottab
+desktop: C:\Users\ottab\Desktop
+desk: C:\Users\ottab\Desktop
+documents: C:\Users\ottab\Documents
+docks: C:\Users\ottab\Documents
+downloads: C:\Users\ottab\Downloads
+music: C:\Users\ottab\Music
+pictures: C:\Users\ottab\Pictures
+videos: C:\Users\ottab\Videos
+talon home: C:\Users\ottab\AppData\Roaming\talon
+talon user: C:\Users\ottab\AppData\Roaming\talon\user

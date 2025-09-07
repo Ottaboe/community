@@ -56,7 +56,7 @@ period:
     user.homophones_hide()
     user.mouse_sleep()
     speech.disable()
-    user.engine_sleep()
+    user.dragon_engine_sleep()
 
 
 
