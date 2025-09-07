@@ -86,9 +86,6 @@ class Actions:
 
     def gamepad_press_north():
         """Gamepad press button north"""
-        #actions.mouse_click(1)
-        actions.key("ctrl:down")
-        actions.key("shift:down")
         actions.mode.disable("command")
         actions.mode.disable("dictation")
         actions.mode.disable("user.dutch")
