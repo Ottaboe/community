@@ -43,3 +43,7 @@ settings():
 parrot(cluck):
     user.engine_wake()
     user.ensure_tracking_enabled()
+    mode.disable("user.eye")
+    mode.disable("dictation")
+    mode.disable("sleep")
+    mode.enable("command")

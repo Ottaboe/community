@@ -6,7 +6,7 @@ command mode:
     mode.disable("user.dutch")
     mode.enable("command")
 
-<phrase>: insert("{phrase} ")
+<phrase>: user.insert_nl("{phrase} ")
 
 #this is for letters in dutch
 #{user.letter}:key(letter)
@@ -34,29 +34,26 @@ ga rechts: print("text")
     edit.line_insert_down()
     user.dictation_format_reset()
 
+period: 
+    edit.delete() 
+    insert(". ")
 
-
-
-
-
-
-
-
-
+(question mark|Question mark): 
+    edit.delete() 
+    insert("? ")
 
 ^commando [<phrase>]$:
     mode.disable("user.dutch")
     mode.disable("dictation")
     mode.enable("command")
 
-^over [<phrase>]$:
+^(overuit|over uit) [<phrase>]$:
     mode.disable("user.dutch")
     mode.disable("dictation")
     mode.enable("command")
     user.switcher_hide_running()
     user.history_disable()
     user.homophones_hide()
-    user.help_hide()
     user.mouse_sleep()
     speech.disable()
     user.engine_sleep()

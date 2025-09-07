@@ -11,8 +11,15 @@ parrot(cluck): core.repeat_phrase(1)
 # So you can wake Talon with Parrot 
 
 #parrot(cluck):
-    user.engine_wake()
-    user.ensure_tracking_enabled()
+#    user.engine_wake()
+#    user.ensure_tracking_enabled()
+#    mode.disable("eye")
+#    mode.disable("dictation")
+#    mode.disable("sleep")
+#    mode.enable("command")
+
+
+
 
 
 

@@ -63,7 +63,7 @@ indent [more]: edit.indent_more()
 
 # Delete
 clear all: user.delete_all()
-clear line: edit.delete_line()
+clear now: edit.delete_line()
 clear line start: user.delete_line_start()
 clear line end: user.delete_line_end()
 clear left: edit.delete()
@@ -152,10 +152,11 @@ cut word right: user.cut_word_right()
 #     edit.cut()
 
 # Paste
-(pace | paste): edit.paste()
-(pace | paste) enter:
-    edit.paste()
-    key(enter)
+# (pace | paste it): edit.paste() line 156 used to be this
+paste now: edit.paste()
+#(pace | paste) enter:
+#    edit.paste()
+#    key(enter)
 paste match: edit.paste_match_style()
 (pace | paste) all: user.paste_all()
 (pace | paste) line: user.paste_line()

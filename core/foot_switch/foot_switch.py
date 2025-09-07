@@ -97,7 +97,7 @@ class Actions:
     def foot_switch_right_down():
         """Foot switch button right:down"""
         print("Right footswitch pressed - triggering left-click")
-        ctrl.mouse_click(button=0)  # Perform left-click
+        actions.mouse_click(0)  # Perform left-click
 
     def foot_switch_right_up(held: bool):
         """Foot switch button right:up"""
