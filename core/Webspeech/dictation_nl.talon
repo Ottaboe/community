@@ -6,7 +6,7 @@ command mode:
     mode.disable("user.dutch")
     mode.enable("command")
 
-<phrase>: user.insert_nl("{phrase} ")
+<phrase>: insert("{phrase} ")
 
 #this is for letters in dutch
 #{user.letter}:key(letter)

@@ -27,8 +27,8 @@ class Actions:
     def gamepad_press_dpad_left():
         """Gamepad press button dpad left"""
         actions.mode.disable("command")
-        #actions.mode.disable("dictation")
-        #actions.mode.disable("user.dutch")
+        actions.mode.disable("dictation")
+        actions.mode.disable("user.dutch")
         actions.mode.enable("user.eye")
 
     def gamepad_release_dpad_left():
@@ -54,9 +54,9 @@ class Actions:
         """Gamepad press button dpad right"""
         actions.user.ensure_tracking_enabled()
         actions.mode.disable("user.eye")
-        #actions.mode.disable("dictation")
+        actions.mode.disable("dictation")
         actions.mode.disable("sleep")
-        #actions.mode.disable("user.dutch")
+        actions.mode.disable("user.dutch")
         actions.mode.enable("command")
 
     def gamepad_release_dpad_right():
@@ -72,8 +72,8 @@ class Actions:
         actions.user.homophones_hide()
         actions.user.mouse_sleep()
         actions.speech.disable()
-        #actions.mode.disable("dictation")
-        #actions.mode.disable("user.dutch")
+        actions.mode.disable("dictation")
+        actions.mode.disable("user.dutch")
         actions.mode.disable("user.eye")
         actions.user.dragon_engine_sleep()
 
@@ -112,9 +112,9 @@ class Actions:
         actions.user.dragon_engine_wake()
         actions.user.ensure_tracking_enabled()
         actions.mode.disable("user.eye")
-        #actions.mode.disable("dictation")
+        actions.mode.disable("dictation")
         actions.mode.disable("sleep")
-        #actions.mode.disable("user.dutch")
+        actions.mode.disable("user.dutch")
         actions.mode.enable("command")
 
     def gamepad_release_south():
