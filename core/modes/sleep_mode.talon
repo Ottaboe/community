@@ -8,6 +8,8 @@ settings():
     user.mouse_enable_pop_click = 0
     # Stop mouse scroll down using hiss noise
     user.mouse_enable_hiss_scroll = false
+    # Make sure no gray indicator when in sleep mode
+    user.mode_indicator_show = false
 
 #================================================================================
 # Commands to wake Talon
@@ -47,3 +49,5 @@ parrot(cluck):
     mode.disable("dictation")
     mode.disable("sleep")
     mode.enable("command")
+
+    
