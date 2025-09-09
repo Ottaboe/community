@@ -2,7 +2,7 @@ mode: dictation
 mode: command
 -
 
- mouse click left
+mouse click left
 parrot(pop):
     user.parrot_click()
 
