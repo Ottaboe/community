@@ -6,6 +6,8 @@ triple grave | triple back tick | gravy: "```"
 ellipsis: "..."
 (comma and | spamma): ", "
 (period and | voider): ". "
+(questioner): "? "
+(banger): "! "
 arrow: "->"
 dub arrow: "=>"
 
