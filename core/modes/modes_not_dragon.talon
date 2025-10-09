@@ -42,3 +42,4 @@ not speech.engine: dragon
     user.homophones_hide()
     user.mouse_sleep()
     speech.disable()
+    mode.disable("user.face_tracking")

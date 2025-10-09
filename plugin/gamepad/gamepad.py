@@ -75,6 +75,7 @@ class Actions:
         actions.mode.disable("dictation")
         actions.mode.disable("user.dutch")
         actions.mode.disable("user.eye")
+        actions.mode.disable("user.face_tracking")
         actions.user.dragon_engine_sleep()
 
     def gamepad_release_dpad_down():
@@ -116,6 +117,7 @@ class Actions:
         actions.mode.disable("sleep")
         actions.mode.disable("user.dutch")
         actions.mode.enable("command")
+        actions.mode.enable("user.face_tracking")
 
     def gamepad_release_south():
         """Gamepad release button south"""

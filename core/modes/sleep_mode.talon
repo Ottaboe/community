@@ -49,5 +49,5 @@ parrot(cluck):
     mode.disable("dictation")
     mode.disable("sleep")
     mode.enable("command")
-
+    mode.enable("user.face_tracking")
     

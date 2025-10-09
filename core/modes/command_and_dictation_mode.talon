@@ -1,6 +1,5 @@
 mode: command
-mode: dictiation
-mode: sleep
+mode: dictation
 -
 ^dictation mode$:
     mode.disable("sleep")
@@ -13,8 +12,9 @@ mode: sleep
     mode.disable("dictation")
     mode.enable("command")
 
-^mixed mode$:
-    mode.disable("sleep")
-    mode.enable("dictation")
-    mode.enable("command")
 
+^face track$:
+    mode.enable("user.face_tracking")
+
+^face ignore$:
+    mode.disable("user.face_tracking")

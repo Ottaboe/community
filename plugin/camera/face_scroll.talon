@@ -1,8 +1,8 @@
-mode: dictation
-mode: command
-mode: user.eye
-mode: user.dutch
+mode: user.face_tracking
 -
+
+
+
 
 # Optional: clear state when the face drops out
 face(presence:stop):
@@ -17,7 +17,7 @@ face(mouth_stretch_left:change):
 
 # Scroll only when LEFT stretch is exclusive (left ON, right OFF)
 face(mouth_stretch_right:repeat):
-    user.stretch_scroll_left_exclusive(-50) 
+    user.stretch_scroll_left_exclusive(-50)
 
 # (keep your existing)
 face(brow_inner_up:repeat):

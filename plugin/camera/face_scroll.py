@@ -1,8 +1,14 @@
-from talon import Module, actions
+from talon import Module, actions, Context
 
 #makes sure smile face scroll only activates when smiling with left side. Checks for right side.
-    
+
 mod = Module()
+
+mod.mode("face_tracking", desc="tells talon to track face through webcam")
+
+ctx = Context()
+ctx.matches="""
+mode: user.face_tracking"""
 
 # Hysteresis thresholds to prevent flicker
 START_T = 0.45   # must exceed this to turn ON

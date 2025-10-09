@@ -38,7 +38,7 @@ period:
     edit.delete() 
     insert(". ")
 
-(question mark|Question mark): 
+(question mark|Question mark|question): 
     edit.delete() 
     insert("? ")
 
