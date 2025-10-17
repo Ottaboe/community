@@ -11,25 +11,23 @@ settings():
 
 
 
-^command mode [<phrase>]$:
-    mode.disable("user.eye")
-    mode.enable("command")
 
-^drowsy [<phrase>]$:
-    user.switcher_hide_running()
-    user.history_disable()
-    user.homophones_hide()
-    user.mouse_sleep()
-    speech.disable()
-    user.dragon_engine_sleep()
-    mode.disable("user.eye")
-    mode.disable("user.face_tracking")
 
-^face track$:
-    mode.enable("user.face_tracking")
+#^drowsy [<phrase>]$:
+#    user.switcher_hide_running()
+#    user.history_disable()
+#   user.homophones_hide()
+#    user.mouse_sleep()
+#    speech.disable()
+#    user.dragon_engine_sleep()
+#    mode.disable("user.eye")
+#    mode.disable("user.face_tracking")
 
-^face ignore$:
-    mode.disable("user.face_tracking")
+#^face track$:
+#    mode.enable("user.face_tracking")
+
+#^face ignore$:
+#    mode.disable("user.face_tracking")
 
 # mouse click left
 parrot(pop):
